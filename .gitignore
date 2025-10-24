@@ -1,0 +1,70 @@
+# Ambiente virtual
+venv/
+.env/
+.env.bak/
+.venv/
+ENV/
+env/
+*.env
+
+# Arquivos de cache do Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Arquivos de log
+*.log
+
+# Arquivos de banco de dados locais
+db.sqlite3
+db.sqlite3-journal
+
+# Arquivos de migração compilados
+*/migrations/__pycache__/
+*/migrations/*.pyc
+
+# Configurações de IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Arquivos temporários do sistema
+.DS_Store
+Thumbs.db
+
+# Arquivos de compilação e distribuição
+build/
+dist/
+*.egg-info/
+*.egg
+
+# Arquivos estáticos gerados
+staticfiles/
+static/
+media/
+
+# Arquivos de cobertura de testes
+htmlcov/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+
+# Arquivos de pip e dependências
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Arquivos relacionados a Docker (caso use)
+*.pid
+*.seed
+*.bak
+
+# Arquivos de backup ou temporários de editores
+*~
+*.bak
+*.tmp
+*.temp
