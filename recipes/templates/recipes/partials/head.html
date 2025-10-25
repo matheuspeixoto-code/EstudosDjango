@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+        
+
+    <title>Recipes</title>
+    <style>
+        :root {
+            /* Cores principais */
+            --cor-primaria: #4CAF50;       /* verde principal */
+            --cor-secundaria: #2E7D32;     /* verde escuro */
+            --cor-acento: #FFC107;          /* amarelo acento */
+
+            --cor-header:#12131f;
+
+            /* Cores de fundo e texto */
+            --cor-fundo-claro: #F5F5F5;
+            --cor-fundo-escuro: #121212;
+            --cor-texto-principal: #333333;
+            --cor-texto-secundario: #666666;
+
+            /* Cores de alerta */
+            --cor-sucesso: #28a745;
+            --cor-aviso: #ffc107;
+            --cor-erro: #dc3545;
+            --cor-informacao: #17a2b8;
+
+            /* Tons de cinza */
+            --cinza-100: #f8f9fa;
+            --cinza-200: #e9ecef;
+            --cinza-300: #dee2e6;
+            --cinza-400: #ced4da;
+            --cinza-500: #adb5bd;
+            --cinza-600: #6c757d;
+            --cinza-700: #495057;
+            --cinza-800: #343a40;
+            --cinza-900: #212529;
+            --color-white:#ffffff;
+
+            /* Fontes */
+            --font-principal: 'Roboto Slab', sans-serif;
+            --font-secundaria: 'Open Sans', sans-serif;
+            --font-cursiva: 'Pacifico', cursive;
+            --font-titulo: 'Montserrat', sans-serif;
+
+            /* Outros */
+            --borda-radius: 6px;
+            --espacamento-padrao: 4rem;
+            --espacamento-medium: 3rem;
+        }
+        h1,h2,h3,h4,h5,h6{
+            font-family: var(--font-secundaria);
+        }
+
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        html{
+            font-size: 62.5%;
+        }
+        body{
+
+            font-size: 1.6rem;
+            background: var(--cinza-400);
+            
+        }
+        .main-header-container{
+            background:var(--cor-header) ;
+        }
+
+        .container{
+            max-width: 144rem;
+            margin: 0 auto;
+            padding: var(--espacamento-padrao);
+        }
+        .main-logo{
+            font-size: 4rem;
+            color: var(--color-white);
+            text-decoration: none;
+            display: flex;
+            flex-flow: row nowrap;
+            align-items: center;
+            justify-content: center;
+            width: fit-content;
+            margin: 0 auto;
+
+        }
+        .main-logo-icon{
+            margin-right: 2rem;
+        }
+
+        .search-form{
+            border: .2rem solid var(--cinza-800);
+            max-width: 64rem;
+            margin: 0 auto;
+            border-radius: var(--borda-radius);
+            position: relative;
+            transition: all 300ms ease-in-out;
+        }
+        .search-input,
+        .search-button{
+            border: none;
+            background: none;
+            outline: none;
+            padding: 1rem;
+        }
+
+        .search-button{
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+        .search-button:focus{
+            outline: 1px solid var(--cor-fundo-claro);
+            background: rgba(0,0,0,0.5);
+        }
+        .search-input{
+            width: 100%;
+            padding-left: 4rem;
+        }
+        .search-form:focus-within{
+            border-color: var(--cor-informacao);
+            background: var(--color-white);
+        }
+        .search-form:focus-within .search-button{
+            color: var(--cor-informacao);
+        }
+
+        .main-content{
+            padding-top: 0;
+            
+        }
+        .main-content-list{
+            display: grid;
+            grid-template-columns: repeat(auto-fit,minmax(340px,1fr));
+            gap: var(--espacamento-medium);
+        }
+        
+        
+    </style>
+
+</head>
